@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>ToDoList</title>
+</head>
+<body>
+
+    
+    <div class="wrapper">
+        
+        <div class="screen-backdrop"></div>
+        <!-- Front Page -->
+        <div class="front">
+            <div class="front-backdrop"></div>
+            <img src="image/boy.png" alt="" class="start">
+            <h1>TO-DO List</h1>
+            <p>Welcome</p>
+            <button class="nex">Go</button>
+        </div>
+
+        <!-- List Page -->
+        <div class="screen home-screen">
+            <div class="head-wrapper">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <div class="welcome">
+                    <div class="content">
+                        <h1>Hello Aman</h1>
+                        <p>Today you have <span class="totalTasks">5</span> tasks</p>
+                    </div>
+                    <div class="img">
+                        <div class="backdrop"></div>
+                        <img src="image/boy.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- categories -->
+            <div class="categories-wrapper">
+                <div class="catogories">
+                    <div class="category">
+                        <div class="left">
+                            <img src="image/boy.png" alt="">
+                            <div class="content">
+                            <h1>Personal</h1>
+                            <p>5 Tasks</p>
+                        </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <i class='bx bx-dots-vertical-rounded' id="toggle-btn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- tasks screen -->
+            <div class="screen category-screen">
+                <div class="head-wrapper">
+                    <i class='bx bx-arrow-back' id="back-btn" ></i>
+                    <div class="options">
+                        <i class='bx bx-dots-vertical-rounded' id="options" ></i>
+                    </div>
+                </div>
+                <div class="category-details">
+                    <img src="image/boy.png" alt="" id="category-img">
+                    <div class="details">
+                        <p class="category-tasks">8 tasks</p>
+                        <h1 class="category-title">Personal</h1>
+                    </div>
+                </div>
+                <div class="tasks-wrapper">
+                    <div class="tasks">
+                        <div class="task-wrapper">
+                            <label for="task" class="task">
+                                <input type="checkbox" name="task" id="task">
+                                <span class="checkmark">
+                                <i class='bx bx-check' id="checkmark"></i>
+                                </span>
+                                <p>Buy a new Shirt</p>
+                            </label>
+                            <div class="delete">
+                                <i class='bx bx-trash' id="delete"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Front page -->
+            <!-- <div class="front">
+                <div class="front-backdrop"></div>
+                <img src="image/boy.png" alt="" class="start">
+                <h1>TO-DO List</h1>
+                <p>Welcome</p>
+                <button class="nex">Go</button>
+            </div> -->
+
+            <!-- add task btn -->
+             <div class="add-task-btn">
+                <i class='bx bx-plus' id="add" ></i>
+             </div>
+
+             
+
+             <!-- backdrop -->
+              <div class="black-backdrop"></div>
+              
+             <!-- add task form -->
+              <div class="add-task">
+                <div class="add-task-backdrop"></div>
+                <h1 class="heading">Add Task</h1>
+                <div class="input-group">
+                    <label for="task-input">Task</label>
+                    <input type="text" id="task-input" required>
+                </div>
+                <div class="input-group">
+                    <label for="category-select">Category</label>
+                    <select name="" id="category-select">
+                    </select>
+                </div>
+                <div class="btns">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="add-btn">Add</button>
+                </div>
+              </div>
+
+              
+             <!-- backdrop front-->
+             <div class="black2-backdrop"></div>
+
+                
+
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
